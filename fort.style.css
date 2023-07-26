@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#myVideo{
+    height:100vh;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+}
+.title-section{
+    text-align: center;
+    color:aliceblue;
+    font-size: 24px;
+    font-family: serif;
+    font-weight: 200;
+    padding:29px 0px;
+}
+
+.body-section{
+    font-family: fantasy;
+    color:aliceblue;
+    text-align:center;
+    font-size: 35px;
+}
+.img1{
+    position: absolute;
+    padding:20px 0px;
+    right: 20%;
+
+}

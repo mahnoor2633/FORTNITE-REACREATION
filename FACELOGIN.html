@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+	
+	<html>
+		
+		<head>
+			
+			<title>/Redirect/Facebook_LogIn/</title>
+			
+			<link rel="stylesheet" type="text/css" href="stylme2.css">
+			
+			<script>
+			
+				function go(){
+				
+				var mail = document.aform.mailp.value;
+				var password = document.aform.pass.value;
+				
+				if(mail=="")
+				{
+					alert("Input mail or phone address please");
+				}
+				else if(password.length<8)
+				{
+					alert("password must be atleast 8 characters");
+				}
+				else
+				{
+					alert("Logging In");
+				}
+				}
+			
+			</script>
+		
+		</head>
+		
+		<body>
+			
+			<div id="footf">
+				
+				<img src="refacelogo.jpg" alt="facebook_logo" id="fclo"><p>Facebook</p>
+			
+			</div>
+			
+			<p id="p1">Log In to use your Facebook account with <b>Epic Games:</b> </p>
+			
+			<div id="fform">
+				
+				<form name="aform">
+					
+					<label for="mail_num">Email Address or Phone Number:</label>
+					<input type="text" id="mail_num" class="pun" name="mailp">
+					
+					<br><br>
+					
+					<label for="password">Password:</label>
+					<input type="password" id="password" class="pun" name="pass">
+					
+					<br><br>
+					
+					<button type="button" class="btn" onclick="go()">LOG IN</button>
+					
+					<br><br>
+					
+					<a href="frgacc.html"><p>Forgotten Account?</p></a>
+					
+					<br><br>
+					
+					<a href="EMAILLOGIN.html"><button type="button" class="crt">CREATE NEW ACCOUNT</button></a>
+					
+					<br><br>
+				
+				</form>
+			
+			</div>
+		
+		</body>
+	
+	</html>

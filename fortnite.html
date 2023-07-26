@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="myfile - Copy.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  @font-face {
+    font-family: "fortnite";
+    src: url(Burbank-Big-Condensed-Bold-Font.otf);
+  }
+    #myBtn {
+      font-family: "fortnite";
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(8, 8, 8);
+}
+</style>
+<body>
+    <div class="main">
+        <video autoplay muted loop id="myVideo">
+            <source src="mzz.mp4" type="video/mp4">
+        </video>
+        
+        <div class="main1">
+        <div class="title-section">
+        <h4><a class="button">HELP CENTER</a></h4>
+        </div>
+        <hr color="white" width="100%"/>
+         
+        <div class="title-section">
+        <h3><a href=" https://www.epicgames.com/help/en-US/fortnite-c5719335176219">PLAYER SUPPORT</a></h3>
+        </div>
+        <div class="body-section">
+            <p>DO YOU NEED HELP WITH FORTNITE OR YOUR<br> EPIC GAMES ACCOUNT? FIND THE ANSWERS IN OUR SUPPORT CENTER OR <a  href="https://fortnitehelp.epicgames.com">Contact Us</a> DIRECTLY.</p>
+            </div>
+            <hr color="white" width="100%"/>
+        
+        <div class="title-section">
+            <h3><a href="https://www.epicgames.com/site/en-US/parental-controls">Parental control</a></h3>
+            </div>
+            <div class="body-section">
+          <p>FORTNITE OFFERS A RANGE OF PARENTAL CONTROLS TO HELP YOU CONTROL WHAT A PLAYER CAN SEE AND DO WITHIN THE GAME. LEARN HOW TO SET UP THESE CONTROLS AND MORE.</p>  
+            </div>
+          <hr color="white" width="100%"/>
+          
+          <div class="title-section">
+            <h3><a href="https://www.epicgames.com/fortnite/en-US/secure-your-fortnite-account">ACCOUNT SECURITY AND PRIVACY</a></h3>
+            </div>
+            <div class="body-section">
+            <P>WITH A SECURE ACCOUNT, YOU MINIMIZE RISK OF OTHERS USING YOUR PAYMENT METHODS, BEHAVING BADLY IN YOUR GAMES, AND/OR DOING MORE DAMAGING ACTIONS. LEARN MORE.</P>
+        </div>
+        <hr color="white" width="100%"/>
+
+        <div class="title-section">
+            <h3><a href="https://www.epicgames.com/site/en-US/community-rules">COMMUNITY RULES</a></h3>
+            <div class="body-section">
+            <p>WHEN PLAYING FORTNITE WE ASK YOU TO AGREE TO THE COMMUNITY RULES TO HELP MAKE OUR COMMUNITY THE BEST PLACE TO PLAY.</p>
+            </div>
+            <hr color="white" width="100%"/>
+        </div>
+        </div>
+        <div class="img-container">
+        <img src="zm.png">
+        </div>
+    </div>
+    <footer>
+        
+        <div class="icon">
+         <a href="https://www.facebook.com/FortniteGame"><i class="fab fa-instagram"></i></a>
+         <a href="https://twitter.com/FortniteGame"><i class="fab fa-twitter"></i></a>
+         <a href="https://www.twitch.tv/fortnitegame"><i class="fab fa-twitch"></i></a>
+         <a href="https://www.youtube.com/fortnite"><i class="fab fa-youtube"></i></a>
+         <a href="https://www.snapchat.com/add/fortnite"><i class="fab fa-snapchat"></i></a>   
+         <a href="https://vk.com/fortnite"><i class="fab fa-vk"></i></a>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">BACK TO TOP</button>
+        
+<script>
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+        
+        
+        <div class="icons2">
+            <ul>
+          <li><a href="IICT.html">HOME</a></li>
+          <li><a href="fort.html">BATTLEPASS</a></li>
+          <li><a href="COMETITIVE.html">COMPETITIVE</a></li>
+          <li><a href="index.html">V-BUCKS CARD</a></li>
+          </ul>
+        </div>
+        <div class="p">
+            <p>© 2023, Epic Games, Inc. Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine 4 and UE4 are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. All rights reserved.</p>
+        </div>
+    
+    </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>ID/Register/date-of-birth</title>
+			<link type="text/css" rel="stylesheet" href="stylme.css">	
+			
+			<script>
+				function go(){
+				var month = document.aform.Month.value;
+				var day = document.aform.Day.value;
+				var year = document.aform.Year.value;
+				
+				if(month == "")
+				{
+					alert("Please Enter Birth month");
+				}
+				else if (day == "")
+				{
+					alert("Please Enter Birth Day");
+				}
+				else if(year == "")
+				{
+					alert("Please Enter Birth Year");
+				}
+				else if(year.value<1995 && year.value>2023)
+				{
+					alert("Please enter Valid Birth Year");
+				}
+				else 
+				{
+					alert("Account created");
+				}
+				}
+				function hide(){
+				
+				alert("We ask for your date of birth to help you have a safe and fun experiance whatever your age");
+				}
+			</script>
+			
+		</head>
+		<body>
+			<div id = "bck">	
+				<div class="frm">
+					<form class="in" name="aform">
+						<div id = "img"><img src="logo1.jpg" id="img1"></div>
+						<br><br>
+						<div id="p6"><p>Please Enter your Date of Birth</p></div>
+						<br><br>
+						
+						<div id="inp">	
+							<select name="Month" value="Month" class="sel">
+								
+								<option value="" disabled selected hidden>Month</option>
+								<option value="JAN" class="opt">January</option>
+								<option value="FEB" class="opt">February</option>
+								<option value="MAR" class="opt">March</option>
+								<option value="APR" class="opt">April</option>
+								<option value="MAY" class="opt">May</option>
+								<option value="JUN" class="opt">June</option>
+								<option value="JUL" class="opt">July</option>
+								<option value="AUG" class="opt">August</option>
+								<option value="SEP" class="opt">September</option>
+								<option value="OCT" class="opt">October</option>
+								<option value="NOV" class="opt">November</option>
+								<option value="DEC" class="opt">December</option>
+								
+							</select>
+							<select name="Day" class="sel">
+							
+								<option value="" disabled selected hidden>Day</option>
+								<option value="1" class="opt">1</option>
+								<option value="2" class="opt">2</option>
+								<option value="3" class="opt">3</option>
+								<option value="4" class="opt">4</option>
+								<option value="5" class="opt">5</option>
+								<option value="6" class="opt">6</option>
+								<option value="7" class="opt">7</option>
+								<option value="8" class="opt">8</option>
+								<option value="9" class="opt">9</option>
+								<option value="10" class="opt">10</option>
+								<option value="11" class="opt">11</option>
+								<option value="12" class="opt">12</option>
+								<option value="13" class="opt">13</option>
+								<option value="14" class="opt">14</option>
+								<option value="15" class="opt">15</option>
+								<option value="16" class="opt">16</option>
+								<option value="17" class="opt">17</option>
+								<option value="18" class="opt">18</option>
+								<option value="19" class="opt">19</option>
+								<option value="20" class="opt">20</option>
+								<option value="21" class="opt">21</option>
+								<option value="22" class="opt">22</option>
+								<option value="23" class="opt">23</option>
+								<option value="24" class="opt">24</option>
+								<option value="25" class="opt">25</option>
+								<option value="26" class="opt">26</option>
+								<option value="27" class="opt">27</option>
+								<option value="28" class="opt">28</option>
+								<option value="29" class="opt">29</option>
+								<option value="30" class="opt">30</option>
+								<option value="31" class="opt">31</option>
+							
+							</select>
+							
+							<input class="sel" type="text" placeholder="Year" name="Year">
+								
+							
+						<br><br>
+						
+						</div>
+						<div id="bon"><p style="color:white;font-size:12px;font-family:Helvetica"><u>Why do we need your date of birth?</u></p><button id="hdbut" class="button" style="font-size:15px;color:white;" onclick="hide()">&#8679;</button></div>
+						
+						<br><br>
+						<button id="cont" onclick="go()">CONTINUE</a></button>
+						<br><br>
+						<div id="privpo"><p><a href="privpo.html">Privacy Policy</a></p></div>
+						<br><br>
+						<div id="switch"><p>Already have an Epic Games account?<a href="EMAILLOGIN2.html"> Sign In</a></p></div>
+						<br><br>
+						<div id="bp1"><p>Back to<a href="HTMLFP.html"> all Sign In options</a></p></div>
+						<br><br>
+					</form>
+				</div>
+			</div>
+		</body>
+	</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>ID/Register/date-of-birth</title>
+			<link type="text/css" rel="stylesheet" href="stylme.css">
+			<script>
+					function go(){
+					
+					var reg=/@/;
+					var mail = document.aform.mail.value;
+					
+					if(mail == "")
+					{
+						alert("Enter Email Please");
+					}
+					else if(reg.test(mail))
+					{
+						alert("Logging In");
+					}
+					else {
+						alert("Invalid Login");
+					}
+					}
+			</script>			
+		</head>
+		<body>
+			<div id = "bck">	
+				<div class="frm">
+					<form class="in" name="aform">
+						<div id = "img"><img src="logo1.jpg" id="img1"></div>
+						<br><br>
+						<div id="p6"><p>Forgot your Password?</p></div>
+						<br><br>
+						<div id="passo"><p>Please fill in the email that you used to register.You<br>will be sent an email with instructions on how to reset<br>your password</p></div>
+						<br><br>	
+						<input type="email" name="mail" class="opt1" placeholder="Email Address">
+						<br><br>
+						<button id="cont1" onclick="go()">SEND EMAIL</button>
+						<br><br>
+						<div id="switch"><p>Remeber your Password?<a href="EMAILLOGIN2.html"> Sign In</a></p></div>
+						<br><br>
+					</form>
+				</div>
+			</div>
+		</body>
+	</html>

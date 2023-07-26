@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>ID/Register/date-of-birth</title>
+			<link type="text/css" rel="stylesheet" href="stylme.css">
+
+			<script>
+				
+				function go(){
+				
+				var checkbox = document.getElementById("check");
+				
+				checkbox.addEventListener( "change",() => {
+					if(checkbox.checked)
+					{
+						function link()
+						{
+						
+							document.getElementById("cont1").src="pincode.html";
+						}
+					}
+					else
+					{
+						alert("Kindly agree to all conditions");
+					}
+					}
+					)
+					}
+				
+			</script>
+			
+		</head>
+		<body>
+			<div id = "bck">	
+				<div class="frm">
+					<form class="in" name="aform">
+						<div id = "img"><img src="logo1.jpg" id="img1"></div>
+						<br><br>
+						<div id="p"><p>Sign Up</p></div>
+						<br><br>
+						<select class="sel1" required>
+							<option value="" disabled selected hidden>Country</option>
+							<option class="opt">Argentina</option>
+							<option class="opt">Australia</option>
+							<option class="opt">India</option>
+							<option class="opt">Iran</option>
+							<option class="opt">Pakistan</option>
+							<option class="opt">SriLanka</option>
+							<option class="opt">Sweden</option>
+							<option class="opt">Zambia</option>
+						</select>
+						<br>
+						<div id="nm"><input type="text" name="fname" class="name" placeholder="First Name" required><input type="text" name="lname" class="name" placeholder="Last Name" required></div>
+						<br>
+						<input type="text" name="display name" class="sel1" placeholder="Display Name" required>
+						<br>
+						<input type="email" name="mail" class="sel1" placeholder="Email Address" required>
+						<br>
+						<input type="password" name="password" class="sel1" placeholder="Password" required>
+						<br><br>
+						<input type="checkbox" name="check" id="check"><label for="check" style="color:#555d50;font-size:16px;font-family:Helvetica">  I would like to recieve news, surveys and <br> special offers from Epic Games</label>
+						<br><br>
+						<input type="checkbox" name="check" id="check"><label for="check" style="color:#555d50;font-size:16px;font-family:Helvetica">  I have read and agreed to the <a href="termservice.html">Terms of Service</a></label>
+						<br><br>
+						<button id="cont1" onclick="go()"><a  onclick="link()">CONTINUE</a></button>
+						<br><br>
+						<div id="privpo"><p><a href="privpo.html">Privacy Policy</a></p></div>
+						<br><br>
+						<div id="switch"><p>Don't have an Epic Games account?<a href="EMAILLOGIN.html"> Sign In</a></p></div>
+						<br><br>
+						<div id="bp1"><p>Back to<a href="HTMLFP.html"> all Sign In options</a></p></div>
+						<br><br>
+					</form>
+				</div>
+			</div>
+		</body>
+	</html>

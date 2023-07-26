@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	
+	<html>
+		
+		<head>
+			
+			<title>/Redirect/Apple_LogIn/</title>
+			
+			<link rel="stylesheet" type="text/css" href="stylme2.css">
+			
+			<script>
+				function go(){
+					
+					var reg=/@/;
+					var mail = document.aform.mail.value;
+					
+					if(mail == "")
+					{
+						alert("Enter Email Please");
+					}
+					else if(reg.test(mail))
+					{
+						alert("Logging In");
+					}
+					else {
+						alert("Invalid Login");
+					}
+					}
+			</script>
+		
+		</head>
+		
+		<body>
+				
+			<div id="foota">
+				<img src="applew.jpg" alt="apple_logo" id="aplo">
+			</div>
+			
+			<div id="apform">
+				<h1>APPLE ID</h1>
+				<form name="aform" id="iform">	
+					<div id="mid1">
+						<img src="applelogo.jpg" alt="apple_logo" id="aplo">
+						<p style="font-size:16px;color:grey;font-family:Helvetica"><b>Use your Apple Id to Sign In Epic Games</b></p>
+					
+						<input type="text" id="mail" class="pun" name="mail">
+						<br><br>
+					
+							<br><br>
+							<p style="font-size:14px;color:grey;font-family:Helvetica"><a style="color:grey; font-size:16px;" href="FORGPASS.html"><b>Forgot your password?</b></a></p>
+							<br><br>
+							<button type="button" onclick="go()" id="bna">LOG IN</button>
+							<br><br>
+					
+					
+					</div>
+				</form>
+			
+			</div>
+		
+		</body>
+	
+	</html>
